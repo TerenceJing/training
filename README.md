@@ -1,2 +1,2 @@
 # training
-SpringBoot Training
+This is a SpringBoot Training project.
