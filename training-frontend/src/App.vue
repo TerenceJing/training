@@ -1,29 +1,35 @@
 <template >
   <div id="app1">
-  <el-header class="vue-header">Vue.js</el-header>
-  <el-container>
-    <el-aside class="aside-container" >
-      <router-link :to="{path:'/hello'}" title="router-link方式跳转">
-      基 础 知 识
-      </router-link>
-      <br/>
-      <el-button type="text" class="href-container" @click="go2Style" 
-      title="this.$router.push方式跳转">
-        动 态 样 式
-      </el-button>
-      <br/>
-      <el-button type="text" class="href-container" @click="go2Lifecycle" 
-      title="this.$router.push方式跳转">
-        生 命 周 期
-      </el-button>
-      <br/>
-      <el-button type="text" class="href-container" @click="go2Component" 
-      title="this.$router.push方式跳转">
-        组 件 封 装
-      </el-button>
-    </el-aside>
-    <el-main><router-view/></el-main>
-  </el-container>
+    <el-header class="vue-header">Vue.js</el-header>
+    <el-container>
+      <el-aside class="aside-container">
+        <router-link :to="{path:'/hello'}" title="router-link方式跳转">基 础 知 识</router-link>
+        <br />
+        <el-button
+          type="text"
+          class="href-container"
+          @click="go2Style"
+          title="this.$router.push方式跳转"
+        >动 态 样 式</el-button>
+        <br />
+        <el-button
+          type="text"
+          class="href-container"
+          @click="go2Lifecycle"
+          title="this.$router.push方式跳转"
+        >生 命 周 期</el-button>
+        <br />
+        <el-button
+          type="text"
+          class="href-container"
+          @click="go2Component"
+          title="this.$router.push方式跳转"
+        >组 件 封 装</el-button>
+      </el-aside>
+      <el-main>
+        <router-view />
+      </el-main>
+    </el-container>
   </div>
 </template>
 
@@ -71,10 +77,10 @@ body {
   text-align: center;
   height: 600px;
   padding: 10px 30px 10px;
-  font-size:16px;
+  font-size: 16px;
 }
 .href-container {
   color: rgb(52, 58, 70);
-  font-size:16px;
+  font-size: 16px;
 }
 </style>
