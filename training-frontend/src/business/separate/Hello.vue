@@ -15,7 +15,7 @@
     </ul>
     <ul>
       <li v-for="(todo,index) in todos" :key="index">{{index}}.{{todo.text }}</li>
-       <li v-for="(todo,index) in todos" :key="index">{{index}}.{{todo.text }}</li>
+       <!-- <li v-for="(todo,index) in todos" :key="index">{{index}}.{{todo.text }}</li> -->
     </ul>
     <ul>
       <li v-for="(todo,name) in todoObj" :key="name">{{name}}:{{todo }}</li>

@@ -2,7 +2,7 @@
     <div>
         <el-button type="primary" @click="loadingOnClik">进入详情</el-button>
         <!-- <toast>hello</toast> -->
-        <openBtn :disabled="isdisabled" @click="updown()">启用</openBtn>
+        <!-- <openBtn :disabled="isdisabled" @click="updown()">启用</openBtn> -->
     </div>
 </template>
 <script>
