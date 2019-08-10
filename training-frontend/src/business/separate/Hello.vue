@@ -1,6 +1,6 @@
 <script src="./hello.js"></script>
 <template id="hello">
-  <div>
+  <el-scrollbar>
     <el-button type="primary" @click="testOnclick">html与js分页测试</el-button>
     <br/> <br/> <br/><div class="separate-container">Vue基础</div>
     <p>{{ message }}</p>
@@ -15,6 +15,7 @@
     </ul>
     <ul>
       <li v-for="(todo,index) in todos" :key="index">{{index}}.{{todo.text }}</li>
+       <li v-for="(todo,index) in todos" :key="index">{{index}}.{{todo.text }}</li>
     </ul>
     <ul>
       <li v-for="(todo,name) in todoObj" :key="name">{{name}}:{{todo }}</li>
@@ -34,7 +35,7 @@
     <!-- 侦听属性 -->
     <input v-model="firstName" />
     <p>fullName:{{ fullName }}</p>
-  </div>
+  </el-scrollbar>
 </template>
 
 <style>
