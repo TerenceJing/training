@@ -198,10 +198,10 @@ var menuList = [
       },
       {
         index: '2',
-        name: '组织树',
+        name: '级联下拉',
         icon: '',
         auth: '',
-        path: '/elTree',
+        path: '/cascader',
         desc: ''
       },
       {

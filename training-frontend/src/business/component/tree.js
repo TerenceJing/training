@@ -19,11 +19,9 @@ export default {
   },
   methods: {
     handleCheckChange(data, checked, indeterminate) {
-      debugger
       console.log(data, checked, indeterminate);
     },
-    loadNode(node, resolve) {
-      debugger
+    loadNode(node, resolve) {      
       if (node.level === 0) {
         return resolve(depList)
       } else if (node.level === 1) {
@@ -38,8 +36,7 @@ export default {
         return resolve([]);
       }
     },
-    renderContent(h, { node, data, store }) {
-      debugger
+    renderContent(h, { node, data, store }) {      
       return (
         <span>
           {this.showName(data)}

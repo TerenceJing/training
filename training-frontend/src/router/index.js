@@ -50,9 +50,9 @@ export default new Router({
           component: () => import('@/business/component/tree.vue')
         },
         {
-          path: '/elTree',
-          name: 'tree',
-          component: () => import('@/business/component/elTree.vue')
+          path: '/cascader',
+          name: 'cascader',
+          component: () => import('@/business/component/cascader.vue')
         }
       ]
     }
