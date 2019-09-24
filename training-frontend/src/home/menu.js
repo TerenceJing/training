@@ -12,7 +12,7 @@ var menuList = [
         name: 'CSS',
         icon: '',
         auth: '',
-        path: '',
+        path: '/css',
         desc: ''
       }, {
         index: '2',

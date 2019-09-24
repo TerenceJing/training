@@ -2,6 +2,58 @@ export default {
   data() {
     return {
       value: [],
+      props: {
+        lazy: true,
+        lazyLoad(node, resolve) {
+          // node = {
+          //   level: 0, 
+          //   loading: true,
+          //   root: true
+          // }
+          debugger
+          var depList = [{
+            id: 1013,
+            depName: '人力资源部',
+            isParent: true
+          }, {
+            id: 1014,
+            depName: '企业发展部',
+            isParent: true
+          }]
+          var orgList = [
+            {
+              id: 101301,
+              depName: '信息中心',
+              isParent: true
+            },
+            {
+              id: 1013010101,
+              depName: '领导',
+              isParent: false
+            }
+          ]
+          setTimeout(() => {
+            if (node.level === 0) {
+              var nodes = depList.map(function (item) {
+                return {
+                  value: item.id,
+                  label: item.depName,
+                  leaf: !item.isParent
+                }
+              })
+            } else {
+              var nodes = orgList.map(function (item) {
+                return {
+                  value: item.id,
+                  label: item.depName,
+                  leaf: !item.isParent
+                }
+              })
+            }
+            resolve(nodes)
+          }, 1000)
+        }
+      },
       options: [{
         value: 'zhinan',
         label: '指南',
@@ -183,61 +235,7 @@ export default {
             label: 'Collapse 折叠面板'
           }]
         }]
-      }],
-      id: 0,      
-      props: {
-        lazy: true,
-        lazyLoad(node, resolve) {
-          // node = {
-          //   level: 0, 
-          //   loading: true,
-          //   root: true
-          // }
-          debugger
-          var depList= [{
-            id: 1013,
-            depName: '人力资源部',
-            isParent: true
-          }, {
-            id: 1014,
-            depName: '企业发展部',
-            isParent: true
-          }]
-          var orgList= [
-            {
-              id: 101301,
-              depName: '信息中心',
-              isParent: true
-            },
-            {
-              id: 1013010101,
-              depName: '领导',
-              isParent: false
-            }
-          ]          
-          setTimeout(() => {
-            if(node.level==0){
-              var nodes = depList.map(function (item) {
-                return {
-                  value: item.id,
-                  label: item.depName,
-                  leaf: !item.isParent
-                }
-              })
-            }else{
-              var nodes = orgList.map(function (item) {
-                return {
-                  value: item.id,
-                  label: item.depName,
-                  leaf: !item.isParent
-                }
-              })
-            }
-            
-            resolve(nodes)
-          }, 1000)
-        }
-      }
+      }]
     }
   },
   methods: {}

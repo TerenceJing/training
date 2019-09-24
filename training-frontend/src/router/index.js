@@ -18,6 +18,11 @@ export default new Router({
       description: '',
       children: [
         {
+          path: '/css',
+          name: 'css',
+          component: () => import('@/business/css/css.vue')
+        },
+        {
           path: '/hello',
           name: 'hello',
           component: Hello,
