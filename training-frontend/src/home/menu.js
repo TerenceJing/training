@@ -206,10 +206,10 @@ var menuList = [
       },
       {
         index: '3',
-        name: '下拉组织树',
+        name: '上传下载',
         icon: '',
         auth: '',
-        path: '',
+        path: '/load',
         desc: ''
       }
     ]

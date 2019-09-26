@@ -53,6 +53,11 @@ export default new Router({
           path: '/cascader',
           name: 'cascader',
           component: () => import('@/business/component/cascader.vue')
+        },
+        {
+          path: '/load',
+          name: 'load',
+          component: () => import('@/business/component/upload.vue')
         }
       ]
     }
