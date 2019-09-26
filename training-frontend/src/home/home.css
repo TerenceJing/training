@@ -1,3 +1,9 @@
+/* css全局变量,:root用来定义全局变量 ,局部变量可以定义在某一个元素或组件下面*/ 
+:root {
+  --base_color: rgb(68,133,151);
+  --bg_color: #e0d4d4;
+}
+
 /* 父页面 */
 body {
   margin: 0;
