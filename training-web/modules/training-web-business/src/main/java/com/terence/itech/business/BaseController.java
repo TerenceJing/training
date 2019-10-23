@@ -1,4 +1,4 @@
-package com.terence.itech.training.web.modules.control;
+package com.terence.itech.business;
 
 /**
  * @desc

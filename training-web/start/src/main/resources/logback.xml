@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <!--自定义属性-->
+    <property name="context-name" value="training"/>
+    <property name="log-dir" value="/home/tomcat/logs/training/"/>
+    <property name="log-console-pattern"
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS}|${context-name}|%highlight(%-5level)|%class|%thread|%blue(%method)|%green(%line)|%highlight(%msg%n)"
+    />
+    <property name="log-file-pattern"
+              value="%d{yyyy-MM-dd HH:mm:ss}|${context-name}|%level|%class|%thread|%method|%line|%msg%n"/>
+
+    <property name="log-encoding" value="UTF-8"/>
+    <contextName>${context-name}</contextName>
+
+    <!--  控制台输出-->
+    <appender name="stdout-info" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>info</level>
+        </filter>
+        <encoder>
+            <pattern>
+                ${log-console-pattern}
+            </pattern>
+            <charset>${log-encoding}</charset>
+        </encoder>
+    </appender>
+
+    <!--文件输出-->
+    <appender name="file-info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>info</level>
+        </filter>
+        <file>${log-dir}/${context-name}.info.log</file>
+        <!-- 日志回滚  -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${log-dir}/${context-name}.info.%i.log</FileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>10</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>30MB</maxFileSize>
+        </triggeringPolicy>
+        <!-- 对记录事件进行格式化。 -->
+        <encoder>
+            <charset>${log-encoding}</charset>
+            <Pattern>
+                ${log-file-pattern}
+            </Pattern>
+        </encoder>
+    </appender>
+    <appender name="file-error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>error</level>
+        </filter>
+        <file>${log-dir}/${context-name}.error.log</file>
+        <!-- 日志回滚  -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${log-dir}/${context-name}.error.%i.log</FileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>10</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>30MB</maxFileSize>
+        </triggeringPolicy>
+        <!-- 对记录事件进行格式化。 -->
+        <encoder>
+            <charset>${log-encoding}</charset>
+            <Pattern>
+                ${log-file-pattern}
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <!--日志输出级别-->
+    <root>
+        <level value="info"/>
+        <appender-ref ref="stdout-info"/>
+        <appender-ref ref="file-info"/>
+        <appender-ref ref="file-error"/>
+    </root>
+</configuration>

@@ -1,4 +1,4 @@
-package com.terence.itech.training.web.base.constants;
+package com.terence.itech.base.constants;
 
 /**
  * @desc

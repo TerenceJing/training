@@ -1,4 +1,4 @@
-package com.terence.itech.training.web.base.config;
+package com.terence.itech.base.config;
 
 /**
  * @desc

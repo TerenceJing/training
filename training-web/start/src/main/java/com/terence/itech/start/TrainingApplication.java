@@ -1,8 +1,7 @@
-package com.terence.itech.training.web;
+package com.terence.itech.start;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author terence

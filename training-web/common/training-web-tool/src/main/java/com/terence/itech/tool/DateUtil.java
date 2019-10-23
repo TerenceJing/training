@@ -1,4 +1,4 @@
-package com.terence.itech.training.web.tool;
+package com.terence.itech.tool;
 
 /**
  * @desc

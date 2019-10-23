@@ -9,9 +9,10 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.terence.itech.training.web</groupId>
   <artifactId>start</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+
   <dependencies>
+    
   </dependencies>
 </project>
