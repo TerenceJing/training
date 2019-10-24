@@ -11,12 +11,12 @@
     <exclusiveGateway id="judgeTask"></exclusiveGateway>
     <userTask id="directorTak" name="经理审批">
       <extensionElements>
-        <activiti:taskListener event="create" class="com.haiyang.flowable.listener.ManagerTaskHandler"></activiti:taskListener>
+        <activiti:taskListener event="create" class="com.terence.itech.flowable.listener.ManagerTaskHandler"></activiti:taskListener>
       </extensionElements>
     </userTask>
     <userTask id="bossTask" name="老板审批">
       <extensionElements>
-        <activiti:taskListener event="create" class="com.haiyang.flowable.listener.BossTaskHandler"></activiti:taskListener>
+        <activiti:taskListener event="create" class="com.terence.itech.flowable.listener.BossTaskHandler"></activiti:taskListener>
       </extensionElements>
     </userTask>
     <endEvent id="end" name="结束"></endEvent>

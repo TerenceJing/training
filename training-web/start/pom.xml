@@ -13,6 +13,31 @@
   <version>1.0.0-SNAPSHOT</version>
 
   <dependencies>
-    
+
+    <dependency>
+      <groupId>com.terence.itech.training.web</groupId>
+      <artifactId>training-web-tool</artifactId>
+      <version>${training.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.terence.itech.training.web</groupId>
+      <artifactId>training-web-base</artifactId>
+      <version>${training.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.terence.itech.training.web</groupId>
+      <artifactId>training-web-flowable</artifactId>
+      <version>${training.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.terence.itech.training.web</groupId>
+      <artifactId>training-web-business</artifactId>
+      <version>${training.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.terence.itech.training.web</groupId>
+      <artifactId>training-web-view</artifactId>
+      <version>${training.version}</version>
+    </dependency>
   </dependencies>
 </project>

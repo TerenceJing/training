@@ -15,7 +15,7 @@
     <dependency>
       <groupId>com.terence.itech.training.web</groupId>
       <artifactId>training-web-flowable</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>${training.version}</version>
     </dependency>
   </dependencies>
 
