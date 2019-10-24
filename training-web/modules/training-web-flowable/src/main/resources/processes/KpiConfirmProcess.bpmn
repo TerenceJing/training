@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
+  <process id="KpiConfirmProcess" name="职能技术族kpi考核详情确认审批流程" isExecutable="true">
+    <startEvent id="start" name="开始" activiti:initiator="applyUserId"></startEvent>
+    <userTask id="staffTask" name="制定kpi考核计划" activiti:assignee="${staff}"></userTask>
+    <userTask id="leaderTask" name="直接领导审批(修改) " activiti:assignee="${leader}">
+      <extensionElements>
+        <activiti:formProperty id="confirm" name="确认通过" type="enum" required="true">
+          <activiti:value id="true" name="确认通过"></activiti:value>
+          <activiti:value id="false" name="退回"></activiti:value>
+        </activiti:formProperty>
+        <activiti:taskListener event="create" expression="${KpiProcessListener.handleLeaderConfirm(task,task.eventName)}"></activiti:taskListener>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow2" sourceRef="staffTask" targetRef="leaderTask"></sequenceFlow>
+    <sequenceFlow id="flow1" sourceRef="start" targetRef="staffTask"></sequenceFlow>
+    <sequenceFlow id="backFlow" name="退回" sourceRef="leaderTask" targetRef="staffTask">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${confirm == false}]]></conditionExpression>
+    </sequenceFlow>
+    <endEvent id="end" name="结束"></endEvent>
+    <sequenceFlow id="passFlow" name="同意" sourceRef="leaderTask" targetRef="end">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${confirm == true}]]></conditionExpression>
+    </sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_KpiConfirmProcess">
+    <bpmndi:BPMNPlane bpmnElement="KpiConfirmProcess" id="BPMNPlane_KpiConfirmProcess">
+      <bpmndi:BPMNShape bpmnElement="start" id="BPMNShape_start">
+        <omgdc:Bounds height="35.0" width="35.0" x="90.0" y="170.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="staffTask" id="BPMNShape_staffTask">
+        <omgdc:Bounds height="55.0" width="105.0" x="160.0" y="160.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="leaderTask" id="BPMNShape_leaderTask">
+        <omgdc:Bounds height="55.0" width="121.0" x="320.0" y="160.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="end" id="BPMNShape_end">
+        <omgdc:Bounds height="35.0" width="35.0" x="490.0" y="170.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+        <omgdi:waypoint x="265.0" y="187.0"></omgdi:waypoint>
+        <omgdi:waypoint x="320.0" y="187.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+        <omgdi:waypoint x="125.0" y="187.0"></omgdi:waypoint>
+        <omgdi:waypoint x="160.0" y="187.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="backFlow" id="BPMNEdge_backFlow">
+        <omgdi:waypoint x="380.0" y="215.0"></omgdi:waypoint>
+        <omgdi:waypoint x="372.0" y="243.0"></omgdi:waypoint>
+        <omgdi:waypoint x="292.0" y="243.0"></omgdi:waypoint>
+        <omgdi:waypoint x="212.0" y="243.0"></omgdi:waypoint>
+        <omgdi:waypoint x="212.0" y="215.0"></omgdi:waypoint>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="14.0" width="24.0" x="268.0" y="250.0"></omgdc:Bounds>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="passFlow" id="BPMNEdge_passFlow">
+        <omgdi:waypoint x="441.0" y="187.0"></omgdi:waypoint>
+        <omgdi:waypoint x="490.0" y="187.0"></omgdi:waypoint>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="14.0" width="100.0" x="449.0" y="201.0"></omgdc:Bounds>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

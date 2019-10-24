@@ -1,17 +1,19 @@
 package com.terence.itech.flowable.controller;
 
 import com.terence.itech.base.result.BaseResult;
+import org.apache.commons.lang3.StringUtils;
 import org.flowable.bpmn.model.BpmnModel;
 import org.flowable.engine.*;
 import org.flowable.engine.runtime.Execution;
 import org.flowable.engine.runtime.ProcessInstance;
 import org.flowable.image.ProcessDiagramGenerator;
 import org.flowable.task.api.Task;
+import org.flowable.task.api.history.HistoricTaskInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -27,31 +29,41 @@ import java.util.Map;
  * @date 2019/10/24 8:28
  */
 @RestController
-@RequestMapping(value = "/expense")
-public class ExpenseController {
+@RequestMapping(value = "/kpi")
+public class KpiController {
   @Autowired
   private RuntimeService runtimeService;
+  @Resource
+  private IdentityService identityService;
   @Autowired
   private TaskService taskService;
   @Autowired
   private RepositoryService repositoryService;
-  @Autowired
+  @Resource
   private ProcessEngine processEngine;
+  @Resource
+  private HistoryService historyService;
+
 
   /**
-   *添加报销流程
+   *添加审批流程，并进入下一步
    */
   @RequestMapping(value = "/add")
-  public BaseResult addExpense(String userId, Integer money, String descption) {
+  public BaseResult addExpense(String applyUserId,String businessId,String userId,String leaderId) {
+    String diagram="KpiConfirmProcess";
     //启动流程
+    if(StringUtils.isNotBlank(applyUserId)){
+      identityService.setAuthenticatedUserId(applyUserId);
+    }
     HashMap<String, Object> map = new HashMap<>();
-    map.put("taskUser", userId);
-    map.put("money", money);
-    ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("Expense", map);
+    map.put("staff", userId);
+    map.put("leader", leaderId);
+    ProcessInstance processInstance = runtimeService.startProcessInstanceByKey(diagram,businessId,map);
+    identityService.setAuthenticatedUserId(null);
     return BaseResult.success( processInstance.getId());
   }
   /**
-   * 获取审批管理列表
+   * 获取审批管理列表----待办任务
    */
   @RequestMapping(value = "/list")
   public BaseResult list(String userId) {
@@ -63,31 +75,44 @@ public class ExpenseController {
       System.out.println(task.toString());
       map.put("id",task.getId());
       map.put("name",task.getName());
+      map.put("assignee",task.getAssignee());
+      map.put("createTime",task.getCreateTime());
+      map.put("executionId",task.getExecutionId());
       resList.add(map);
     }
     return BaseResult.success(resList);
   }
+  /**
+   * 获取审批管理列表----已办任务
+   */
+  @RequestMapping(value = "/historyList")
+  public BaseResult historyList(String userId) {
+    List<HistoricTaskInstance> hisTaskList=historyService.createHistoricTaskInstanceQuery().taskAssignee(userId).finished().orderByTaskCreateTime().desc().list();
+
+    return BaseResult.success(hisTaskList);
+  }
 
   /**
-   * 批准
+   * 提交到下一步
+   * 根据条件流转到具体的下一步
    *
    */
   @RequestMapping(value = "/apply")
-  public String apply(String taskId) {
+  public BaseResult apply(String taskId,String userId) {
     Task task = taskService.createTaskQuery().taskId(taskId).singleResult();
     if (task == null) {
       throw new RuntimeException("流程不存在");
     }
     //通过审核
     HashMap<String, Object> map = new HashMap<>();
-    map.put("outcome", "通过");
+    map.put("leader", userId);
+    map.put("confirm",true);
     taskService.complete(taskId, map);
-    return "processed ok!";
+    return BaseResult.success("accept");
   }
   /**
    * 拒绝
    */
-  @ResponseBody
   @RequestMapping(value = "/reject")
   public BaseResult reject(String taskId) {
     HashMap<String, Object> map = new HashMap<>();
@@ -95,6 +120,17 @@ public class ExpenseController {
     taskService.complete(taskId, map);
     return BaseResult.success("reject");
   }
+
+  /**
+   *
+   * 结束任务
+   */
+  @RequestMapping(value = "/complete")
+  public BaseResult completeTask(String taskId) {
+    processEngine.getTaskService().complete(taskId);
+    return BaseResult.success("complete");
+  }
+
   /**
    * 生成流程图
    *
