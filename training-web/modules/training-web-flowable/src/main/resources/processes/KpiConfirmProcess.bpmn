@@ -2,8 +2,11 @@
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
   <process id="KpiConfirmProcess" name="职能技术族kpi考核详情确认审批流程" isExecutable="true">
     <startEvent id="start" name="开始" activiti:initiator="applyUserId"></startEvent>
-    <userTask id="staffTask" name="制定kpi考核计划" activiti:assignee="${staff}"></userTask>
-    <userTask id="leaderTask" name="直接领导审批(修改) " activiti:assignee="${leader}">
+    <userTask id="staffTask" name="员工" activiti:assignee="${staff}">
+      <documentation>填写kpi考核计划，并提交流程</documentation>
+    </userTask>
+    <userTask id="leaderTask" name="直接领导" activiti:assignee="${leader}">
+      <documentation>审批/修改</documentation>
       <extensionElements>
         <activiti:formProperty id="confirm" name="确认通过" type="enum" required="true">
           <activiti:value id="true" name="确认通过"></activiti:value>
@@ -47,11 +50,10 @@
       <bpmndi:BPMNEdge bpmnElement="backFlow" id="BPMNEdge_backFlow">
         <omgdi:waypoint x="380.0" y="215.0"></omgdi:waypoint>
         <omgdi:waypoint x="372.0" y="243.0"></omgdi:waypoint>
-        <omgdi:waypoint x="292.0" y="243.0"></omgdi:waypoint>
         <omgdi:waypoint x="212.0" y="243.0"></omgdi:waypoint>
         <omgdi:waypoint x="212.0" y="215.0"></omgdi:waypoint>
         <bpmndi:BPMNLabel>
-          <omgdc:Bounds height="14.0" width="24.0" x="268.0" y="250.0"></omgdc:Bounds>
+          <omgdc:Bounds height="14.0" width="24.0" x="274.0" y="250.0"></omgdc:Bounds>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="passFlow" id="BPMNEdge_passFlow">

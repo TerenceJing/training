@@ -9,6 +9,7 @@ import org.flowable.engine.runtime.ProcessInstance;
 import org.flowable.image.ProcessDiagramGenerator;
 import org.flowable.task.api.Task;
 import org.flowable.task.api.history.HistoricTaskInstance;
+import org.flowable.variable.api.history.HistoricVariableInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -78,6 +79,7 @@ public class KpiController {
       map.put("assignee",task.getAssignee());
       map.put("createTime",task.getCreateTime());
       map.put("executionId",task.getExecutionId());
+      map.put("instanceId",task.getProcessInstanceId());
       resList.add(map);
     }
     return BaseResult.success(resList);
@@ -129,6 +131,18 @@ public class KpiController {
   public BaseResult completeTask(String taskId) {
     processEngine.getTaskService().complete(taskId);
     return BaseResult.success("complete");
+  }
+
+  /**
+   *
+   * 结束任务
+   */
+  @RequestMapping(value = "/node-list")
+  public BaseResult nodeList(String processInstanceId) {
+    List<HistoricVariableInstance> hvis = historyService.createHistoricVariableInstanceQuery()
+            .processInstanceId(processInstanceId).list();
+
+    return BaseResult.success(hvis);
   }
 
   /**
