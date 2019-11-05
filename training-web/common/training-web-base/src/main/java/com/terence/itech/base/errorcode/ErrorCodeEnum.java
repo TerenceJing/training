@@ -28,10 +28,14 @@ public enum ErrorCodeEnum {
   USER_EMPTY( "020006", "查无此人,员工号：{%s}", "Query none with userId {%s}"),
   USER_NAME_QUERY_FILED( "020007", "用户姓名查询失败,员工号：{%s}", "Failed to query userName info with userId {%s}"),
 
-  PROCESS_EMPTY_ERROR( "020007", "用户姓名查询失败,员工号：{%s}", "Failed to query userName info with userId {%s}"),
+  /**==============================流程类业务模块=======================================*/
+  PROCESS_TASK_LIST_QUERY_FAILED("030009", "获取任务列表失败", "Failed to query todo list"),
+  PROCESS_NEXT_INFO_ERROR("040001", "查询下一步流程信息失败", "Failed to query query next process info"),
+  PROCESS_TASK_COMPLETE_FAILED("040002", "流程任务处理失败", "Failed to handle process task"),
+  PROCESS_EMPTY_ERROR("040003", "流程为空", "Process null error"),
 
-
-  /**==============================系统权限业务模块=======================================*/
+  PROCESS_KPI_BASELINE_FAILED("040004", "审核流程发起失败，总分不足100分", "Failed to launch process with less 100 score"),
+  PROCESS_KPI_STATUS_FAILED("040005", "审核流程发起失败，考核指标已冻结", "Failed to launch process with frozen index"),
 
   ;
   private String appCode="0x";

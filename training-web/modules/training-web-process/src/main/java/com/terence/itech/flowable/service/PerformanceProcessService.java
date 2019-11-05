@@ -4,7 +4,8 @@ package com.terence.itech.flowable.service;
  * <p></p>
  *
  * @author Terence
- * @date 2019/11/5 14:25
+ * @date 2019/10/31 9:14
  */
-public class CommonProcessService {
+public interface PerformanceProcessService {
+
 }
