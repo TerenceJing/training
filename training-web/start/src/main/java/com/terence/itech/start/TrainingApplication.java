@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @desc
  * @date 2019/2/19 18:13
  */
-@SpringBootApplication(scanBasePackages = {"com.terence.itech"})
+@SpringBootApplication(scanBasePackages = {"com.terence.itech.**"})
 public class TrainingApplication {
 
 	public static void main(String[] args) {

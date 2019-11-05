@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * <p>数据传输基础类</p>
  *
- * @author JingTiancai
+ * @author Terence
  * @date 2019-09-28 20:50
  */
 @Data
@@ -37,7 +37,7 @@ public class BaseResult<D> {
   }
   /**
    *系统内部错误
-   *@author Jing Tiancai
+   *@author Terence
    *@date 2019/10/14 11:42
    */
   public static BaseResult fail(ErrorCodeEnum ece){
@@ -51,7 +51,7 @@ public class BaseResult<D> {
   }
   /**
    *外部异常
-   *@author Jing Tiancai
+   *@author Terence
    *@date 2019/10/14 11:35
    */
   public static BaseResult failEx(ErrorCode ec){
@@ -64,7 +64,7 @@ public class BaseResult<D> {
 
   /**
    *获取一个成功的实例，和put(key,value)连用
-   *@author Jing Tiancai
+   *@author Terence
    *@date 2019/10/21 16:45
    */
   public static BaseResult<Map<String,Object>> getInstance() {

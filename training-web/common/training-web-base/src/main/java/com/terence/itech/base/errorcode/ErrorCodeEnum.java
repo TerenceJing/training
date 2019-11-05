@@ -2,7 +2,7 @@ package com.terence.itech.base.errorcode;
 
 /**
  *<p>错误码</p>
- *@author Jing Tiancai
+ *@author Terence
  *@date 2019/10/12 15:04
  */
 public enum ErrorCodeEnum {
@@ -28,7 +28,7 @@ public enum ErrorCodeEnum {
   USER_EMPTY( "020006", "查无此人,员工号：{%s}", "Query none with userId {%s}"),
   USER_NAME_QUERY_FILED( "020007", "用户姓名查询失败,员工号：{%s}", "Failed to query userName info with userId {%s}"),
 
-
+  PROCESS_EMPTY_ERROR( "020007", "用户姓名查询失败,员工号：{%s}", "Failed to query userName info with userId {%s}"),
 
 
   /**==============================系统权限业务模块=======================================*/

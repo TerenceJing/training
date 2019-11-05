@@ -8,9 +8,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * <p>处理内部业务异常</p>
+ * <p>业务异常封装：内部异常，外部异常</p>
  *
- * @author JingTiancai
+ * @author Terence
  * @date 2019-09-29 00:16
  */
 @Data
@@ -61,7 +61,7 @@ public class BusinessException extends RuntimeException  {
   /**
    * 查看是否是业务异常，不是则包装成业务异常
    * gateException（）系列方法
-   *@author Jing Tiancai
+   *@author Terence
    *@date 2019/9/29 14:35
    */
   public static BusinessException gateException(Exception ex) {
@@ -83,5 +83,13 @@ public class BusinessException extends RuntimeException  {
     }else{
       return new BusinessException(e,ex);
     }
+  }
+
+  public String getCode() {
+    return code;
+  }
+
+  public String getMsg() {
+    return msg;
   }
 }

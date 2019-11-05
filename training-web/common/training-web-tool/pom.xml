@@ -11,6 +11,7 @@
 
     <artifactId>training-web-tool</artifactId>
     <dependencies>
+<!--        json-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -21,7 +22,7 @@
             <artifactId>hutool-all</artifactId>
             <version>4.5.5</version>
         </dependency>
-        <!-- CollectionUtils -->
+        <!-- CollectionUtils & StringUtils -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>
@@ -33,9 +34,11 @@
             <version>3.9</version>
         </dependency>
 
+<!--        lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
         </dependency>
     </dependencies>
 </project>

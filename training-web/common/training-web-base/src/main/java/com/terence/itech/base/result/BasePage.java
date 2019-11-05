@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * <p>分页对象</p>
  *
- * @author JingTiancai
+ * @author Terence
  * @date 2019-09-29 00:12
  */
 @Data

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * <p></p>
  *
- * @author Jing Tiancai
+ * @author Terence
  * @date 2019/10/24 19:13
  */
 @Component("KpiProcessListener")

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 /**
  * <p></p>
  *
- * @author Jing Tiancai
+ * @author Terence
  * @date 2019/9/29 15:35
  */
 @ControllerAdvice
@@ -24,7 +24,7 @@ public class GlobalExceptionHandler {
   private static Logger logger= LoggerFactory.getLogger(GlobalExceptionHandler.class);
   /**
    *拦截内部业务异常
-   *@author Jing Tiancai
+   *@author Terence
    *@date 2019/9/29 15:40
    */
   @ExceptionHandler(BusinessException.class)
@@ -36,7 +36,7 @@ public class GlobalExceptionHandler {
   }
   /**
    *拦截内部其他异常
-   *@author Jing Tiancai
+   *@author Terence
    *@date 2019/10/12 18:49
    */
   @ExceptionHandler(RuntimeException.class)

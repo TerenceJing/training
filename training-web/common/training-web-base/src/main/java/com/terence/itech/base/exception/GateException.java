@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 /**
  * <p>业务异常的关卡注解</p>
  *
- * @author Jing Tiancai
+ * @author Terence
  * @date 2019/10/12 13:15
  */
 @Target(ElementType.METHOD)

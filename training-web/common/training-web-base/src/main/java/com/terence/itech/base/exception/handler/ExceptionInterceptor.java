@@ -1,4 +1,4 @@
-package com.terence.itech.base.exception;
+package com.terence.itech.base.exception.handler;
 
 import com.alibaba.fastjson.JSON;
 import com.terence.itech.base.errorcode.ErrorCodeEnum;
@@ -14,6 +14,7 @@ import java.io.PrintWriter;
 
 /**
  * <p>拦截外部异常</p>
+ * @author Terence
  */
 public class ExceptionInterceptor implements HandlerInterceptor {
   private String preResult="{\n" + "    \"type\":-1,\n" + "    \"code\": \"0x000001\",\n" + "    \"msg\":\"";
