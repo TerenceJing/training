@@ -1,0 +1,416 @@
+2019-11-05 23:53:52|training|INFO|org.springframework.boot.StartupInfoLogger|main|logStarting|50|Starting TrainingApplication on TerencedeMacBook-Pro.local with PID 3413 (/Users/terence/IdeaProjects/training/training-web/start/target/classes started by terence in /Users/terence/IdeaProjects/training/training-web)
+2019-11-05 23:53:52|training|INFO|org.springframework.boot.SpringApplication|main|logStartupProfileInfo|652|The following profiles are active: dev
+2019-11-05 23:53:54|training|INFO|org.springframework.boot.web.embedded.tomcat.TomcatWebServer|main|initialize|90|Tomcat initialized with port(s): 8174 (http)
+2019-11-05 23:53:54|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Initializing ProtocolHandler ["http-nio-8174"]
+2019-11-05 23:53:54|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Starting service [Tomcat]
+2019-11-05 23:53:54|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-05 23:53:54|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Initializing Spring embedded WebApplicationContext
+2019-11-05 23:53:54|training|INFO|org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext|main|prepareWebApplicationContext|284|Root WebApplicationContext: initialization completed in 1807 ms
+2019-11-05 23:53:54|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:53:54|training|INFO|org.springframework.scheduling.concurrent.ExecutorConfigurationSupport|main|initialize|171|Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-05 23:53:55|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:53:55|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:53:55|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:53:55|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|834|Found 6 Engine Configurators in total:
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-11-05 23:53:55|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-11-05 23:53:55|training|INFO|com.zaxxer.hikari.HikariDataSource|main|getConnection|110|HikariPool-1 - Starting...
+2019-11-05 23:53:55|training|WARN|com.zaxxer.hikari.util.DriverDataSource|main|<init>|68|Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-05 23:54:31|training|INFO|org.springframework.boot.StartupInfoLogger|main|logStarting|50|Starting TrainingApplication on TerencedeMacBook-Pro.local with PID 3421 (/Users/terence/IdeaProjects/training/training-web/start/target/classes started by terence in /Users/terence/IdeaProjects/training/training-web)
+2019-11-05 23:54:31|training|INFO|org.springframework.boot.SpringApplication|main|logStartupProfileInfo|652|The following profiles are active: dev
+2019-11-05 23:54:32|training|INFO|org.springframework.boot.web.embedded.tomcat.TomcatWebServer|main|initialize|90|Tomcat initialized with port(s): 8174 (http)
+2019-11-05 23:54:32|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Initializing ProtocolHandler ["http-nio-8174"]
+2019-11-05 23:54:32|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Starting service [Tomcat]
+2019-11-05 23:54:32|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-05 23:54:32|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Initializing Spring embedded WebApplicationContext
+2019-11-05 23:54:32|training|INFO|org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext|main|prepareWebApplicationContext|284|Root WebApplicationContext: initialization completed in 1531 ms
+2019-11-05 23:54:33|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:54:33|training|INFO|org.springframework.scheduling.concurrent.ExecutorConfigurationSupport|main|initialize|171|Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-05 23:54:33|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:54:33|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:54:33|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:54:33|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|834|Found 6 Engine Configurators in total:
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-11-05 23:54:33|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-11-05 23:54:33|training|INFO|com.zaxxer.hikari.HikariDataSource|main|getConnection|110|HikariPool-1 - Starting...
+2019-11-05 23:54:33|training|WARN|com.zaxxer.hikari.util.DriverDataSource|main|<init>|68|Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-05 23:55:44|training|INFO|org.springframework.boot.StartupInfoLogger|main|logStarting|50|Starting TrainingApplication on TerencedeMacBook-Pro.local with PID 3432 (/Users/terence/IdeaProjects/training/training-web/start/target/classes started by terence in /Users/terence/IdeaProjects/training/training-web)
+2019-11-05 23:55:44|training|INFO|org.springframework.boot.SpringApplication|main|logStartupProfileInfo|652|The following profiles are active: dev
+2019-11-05 23:55:45|training|INFO|org.springframework.boot.web.embedded.tomcat.TomcatWebServer|main|initialize|90|Tomcat initialized with port(s): 8174 (http)
+2019-11-05 23:55:46|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Initializing ProtocolHandler ["http-nio-8174"]
+2019-11-05 23:55:46|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Starting service [Tomcat]
+2019-11-05 23:55:46|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-05 23:55:46|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Initializing Spring embedded WebApplicationContext
+2019-11-05 23:55:46|training|INFO|org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext|main|prepareWebApplicationContext|284|Root WebApplicationContext: initialization completed in 1792 ms
+2019-11-05 23:55:46|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:55:46|training|INFO|org.springframework.scheduling.concurrent.ExecutorConfigurationSupport|main|initialize|171|Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-05 23:55:46|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:55:46|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:55:47|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:55:47|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|834|Found 6 Engine Configurators in total:
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-11-05 23:55:47|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-11-05 23:55:47|training|INFO|com.zaxxer.hikari.HikariDataSource|main|getConnection|110|HikariPool-1 - Starting...
+2019-11-05 23:55:47|training|WARN|com.zaxxer.hikari.util.DriverDataSource|main|<init>|68|Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-05 23:57:22|training|ERROR|com.zaxxer.hikari.pool.HikariPool|main|throwPoolInitializationException|574|HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:897)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy$TransactionAwareInvocationHandler.invoke(TransactionAwareDataSourceProxy.java:225)
+	at com.sun.proxy.$Proxy93.getMetaData(Unknown Source)
+	at org.flowable.common.engine.impl.AbstractEngineConfiguration.initDatabaseType(AbstractEngineConfiguration.java:392)
+	at org.flowable.common.engine.impl.AbstractEngineConfiguration.initDataSource(AbstractEngineConfiguration.java:384)
+	at org.flowable.app.engine.AppEngineConfiguration.init(AppEngineConfiguration.java:197)
+	at org.flowable.app.engine.AppEngineConfiguration.buildAppEngine(AppEngineConfiguration.java:182)
+	at org.flowable.app.spring.SpringAppEngineConfiguration.buildAppEngine(SpringAppEngineConfiguration.java:61)
+	at org.flowable.app.spring.AppEngineFactoryBean.getObject(AppEngineFactoryBean.java:59)
+	at org.flowable.app.spring.AppEngineFactoryBean.getObject(AppEngineFactoryBean.java:31)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1674)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:330)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.terence.itech.start.TrainingApplication.main(TrainingApplication.java:15)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:150)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:841)
+	... 82 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 84 common frames omitted
+2019-11-05 23:57:22|training|ERROR|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initDatabaseType|402|Exception while initializing Database connection
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:897)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:822)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy$TransactionAwareInvocationHandler.invoke(TransactionAwareDataSourceProxy.java:225)
+	at com.sun.proxy.$Proxy93.getMetaData(Unknown Source)
+	at org.flowable.common.engine.impl.AbstractEngineConfiguration.initDatabaseType(AbstractEngineConfiguration.java:392)
+	at org.flowable.common.engine.impl.AbstractEngineConfiguration.initDataSource(AbstractEngineConfiguration.java:384)
+	at org.flowable.app.engine.AppEngineConfiguration.init(AppEngineConfiguration.java:197)
+	at org.flowable.app.engine.AppEngineConfiguration.buildAppEngine(AppEngineConfiguration.java:182)
+	at org.flowable.app.spring.SpringAppEngineConfiguration.buildAppEngine(SpringAppEngineConfiguration.java:61)
+	at org.flowable.app.spring.AppEngineFactoryBean.getObject(AppEngineFactoryBean.java:59)
+	at org.flowable.app.spring.AppEngineFactoryBean.getObject(AppEngineFactoryBean.java:31)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1674)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1249)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:330)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.terence.itech.start.TrainingApplication.main(TrainingApplication.java:15)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:150)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:841)
+	... 82 common frames omitted
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 84 common frames omitted
+2019-11-05 23:57:23|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsAfterInit|858|Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:57:23|training|INFO|com.zaxxer.hikari.HikariDataSource|main|getConnection|110|HikariPool-1 - Starting...
+2019-11-05 23:57:23|training|WARN|com.zaxxer.hikari.util.DriverDataSource|main|<init>|68|Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-05 23:58:34|training|INFO|org.springframework.boot.StartupInfoLogger|main|logStarting|50|Starting TrainingApplication on TerencedeMacBook-Pro.local with PID 3443 (/Users/terence/IdeaProjects/training/training-web/start/target/classes started by terence in /Users/terence/IdeaProjects/training/training-web)
+2019-11-05 23:58:34|training|INFO|org.springframework.boot.SpringApplication|main|logStartupProfileInfo|652|The following profiles are active: dev
+2019-11-05 23:58:36|training|INFO|org.springframework.boot.web.embedded.tomcat.TomcatWebServer|main|initialize|90|Tomcat initialized with port(s): 8174 (http)
+2019-11-05 23:58:36|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Initializing ProtocolHandler ["http-nio-8174"]
+2019-11-05 23:58:36|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Starting service [Tomcat]
+2019-11-05 23:58:36|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-05 23:58:36|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Initializing Spring embedded WebApplicationContext
+2019-11-05 23:58:36|training|INFO|org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext|main|prepareWebApplicationContext|284|Root WebApplicationContext: initialization completed in 1691 ms
+2019-11-05 23:58:37|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:58:37|training|INFO|org.springframework.scheduling.concurrent.ExecutorConfigurationSupport|main|initialize|171|Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-05 23:58:37|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:58:37|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:58:37|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:58:37|training|INFO|org.flowable.spring.boot.AbstractEngineAutoConfiguration|main|discoverDeploymentResources|94|No deployment resources were found for autodeployment
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|834|Found 6 Engine Configurators in total:
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|initConfigurators|836|class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-11-05 23:58:37|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsBeforeInit|851|Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-11-05 23:58:37|training|INFO|com.zaxxer.hikari.HikariDataSource|main|getConnection|110|HikariPool-1 - Starting...
+2019-11-05 23:58:37|training|WARN|com.zaxxer.hikari.util.DriverDataSource|main|<init>|68|Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-05 23:58:38|training|INFO|com.zaxxer.hikari.HikariDataSource|main|getConnection|123|HikariPool-1 - Start completed.
+2019-11-05 23:58:38|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsAfterInit|858|Executing configure() of class org.flowable.engine.spring.configurator.SpringProcessEngineConfigurator (priority:50000)
+2019-11-05 23:58:39|training|INFO|org.flowable.engine.impl.ProcessEngineImpl|main|<init>|84|ProcessEngine default created
+2019-11-05 23:58:39|training|INFO|org.flowable.engine.impl.cmd.ValidateV5EntitiesCmd|main|execute|43|Total of v5 deployments found: 0
+2019-11-05 23:58:39|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsAfterInit|858|Executing configure() of class org.flowable.idm.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-11-05 23:58:39|training|INFO|org.flowable.idm.engine.impl.IdmEngineImpl|main|<init>|51|IdmEngine default created
+2019-11-05 23:58:39|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsAfterInit|858|Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-11-05 23:58:39|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_DMN_DATABASECHANGELOGLOCK
+2019-11-05 23:58:39|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_DMN_DATABASECHANGELOGLOCK
+2019-11-05 23:58:39|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT `LOCKED` FROM training.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-11-05 23:58:39|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully acquired change log lock
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT MD5SUM FROM training.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_DMN_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Reading from training.ACT_DMN_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT * FROM training.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully released change log lock
+2019-11-05 23:58:40|training|INFO|org.flowable.dmn.engine.impl.DmnEngineImpl|main|<init>|54|DmnEngine default created
+2019-11-05 23:58:40|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsAfterInit|858|Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_FO_DATABASECHANGELOGLOCK
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_FO_DATABASECHANGELOGLOCK
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT `LOCKED` FROM training.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully acquired change log lock
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT MD5SUM FROM training.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_FO_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Reading from training.ACT_FO_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT * FROM training.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully released change log lock
+2019-11-05 23:58:40|training|INFO|org.flowable.form.engine.impl.FormEngineImpl|main|<init>|51|FormEngine default created
+2019-11-05 23:58:40|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsAfterInit|858|Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-11-05 23:58:40|training|INFO|org.flowable.content.engine.ContentEngineConfiguration|main|initContentStorage|193|Content file system root : /Users/terence/content
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_CO_DATABASECHANGELOGLOCK
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_CO_DATABASECHANGELOGLOCK
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT `LOCKED` FROM training.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully acquired change log lock
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT MD5SUM FROM training.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_CO_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Reading from training.ACT_CO_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT * FROM training.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully released change log lock
+2019-11-05 23:58:40|training|INFO|org.flowable.content.engine.impl.ContentEngineImpl|main|<init>|48|ContentEngine default created
+2019-11-05 23:58:40|training|INFO|org.flowable.common.engine.impl.AbstractEngineConfiguration|main|configuratorsAfterInit|858|Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT `LOCKED` FROM training.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully acquired change log lock
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT MD5SUM FROM training.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_CMMN_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Reading from training.ACT_CMMN_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT * FROM training.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully released change log lock
+2019-11-05 23:58:40|training|INFO|org.flowable.cmmn.engine.impl.CmmnEngineImpl|main|<init>|64|CmmnEngine default created
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_APP_DATABASECHANGELOGLOCK
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_APP_DATABASECHANGELOGLOCK
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT `LOCKED` FROM training.ACT_APP_DATABASECHANGELOGLOCK WHERE ID=1
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully acquired change log lock
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT MD5SUM FROM training.ACT_APP_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT COUNT(*) FROM training.ACT_APP_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Reading from training.ACT_APP_DATABASECHANGELOG
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|SELECT * FROM training.ACT_APP_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-11-05 23:58:40|training|INFO|liquibase.logging.core.Slf4jLogger|main|info|42|Successfully released change log lock
+2019-11-05 23:58:40|training|INFO|org.flowable.app.engine.impl.AppEngineImpl|main|<init>|48|AppEngine default created
+2019-11-05 23:58:41|training|INFO|org.apache.juli.logging.DirectJDKLog|main|log|173|Starting ProtocolHandler ["http-nio-8174"]
+2019-11-05 23:58:41|training|INFO|org.springframework.boot.web.embedded.tomcat.TomcatWebServer|main|start|202|Tomcat started on port(s): 8174 (http) with context path '/training'
+2019-11-05 23:58:41|training|INFO|org.springframework.boot.StartupInfoLogger|main|logStarted|59|Started TrainingApplication in 6.857 seconds (JVM running for 7.815)
+2019-11-06 00:01:24|training|INFO|org.springframework.scheduling.concurrent.ExecutorConfigurationSupport|Thread-16|shutdown|208|Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-06 00:01:24|training|INFO|com.zaxxer.hikari.HikariDataSource|Thread-16|close|350|HikariPool-1 - Shutdown initiated...
+2019-11-06 00:01:24|training|INFO|com.zaxxer.hikari.HikariDataSource|Thread-16|close|352|HikariPool-1 - Shutdown completed.
