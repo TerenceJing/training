@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
+  <process id="KpiConfirmProcess" name="职能技术族kpi考核详情确认审批流程" isExecutable="true">
+    <startEvent id="start" name="开始" activiti:initiator="applyUserId"></startEvent>
+    <userTask id="staffTask" name="员工" activiti:assignee="${staff}">
+      <documentation>填写kpi考核计划，并提交流程</documentation>
+      <extensionElements>
+        <activiti:taskListener event="create" expression="${KpiProcessListener.handleLeaderBack(task,task.eventName)}"></activiti:taskListener>
+        <activiti:taskListener event="complete" expression="${KpiProcessListener.handleStaffSubmit(task,task.eventName)}"></activiti:taskListener>
+      </extensionElements>
+    </userTask>
+    <userTask id="leaderTask" name="直接领导" activiti:assignee="${leader}">
+      <documentation>修改/审批</documentation>
+    </userTask>
+    <sequenceFlow id="flow2" sourceRef="staffTask" targetRef="leaderTask"></sequenceFlow>
+    <sequenceFlow id="flow1" sourceRef="start" targetRef="staffTask"></sequenceFlow>
+    <sequenceFlow id="backFlow" name="退回" sourceRef="leaderTask" targetRef="staffTask">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${next eq "back"}]]></conditionExpression>
+    </sequenceFlow>
+    <endEvent id="end" name="结束">
+      <extensionElements>
+        <activiti:executionListener event="end" expression="${KpiProcessListener.handleLeaderConfirm(execution,execution.eventName)}"></activiti:executionListener>
+      </extensionElements>
+    </endEvent>
+    <sequenceFlow id="passFlow" name="同意" sourceRef="leaderTask" targetRef="end">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${next eq "agree"}]]></conditionExpression>
+    </sequenceFlow>
+    <userTask id="signTask" name="会签人员" activiti:assignee="${signUser}">
+      <documentation>会签指定人员处理流程</documentation>
+    </userTask>
+    <sequenceFlow id="signFlow" name="会签" sourceRef="leaderTask" targetRef="signTask">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${next eq "sign"}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="flow4" name="处理" sourceRef="signTask" targetRef="leaderTask"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_KpiConfirmProcess">
+    <bpmndi:BPMNPlane bpmnElement="KpiConfirmProcess" id="BPMNPlane_KpiConfirmProcess">
+      <bpmndi:BPMNShape bpmnElement="start" id="BPMNShape_start">
+        <omgdc:Bounds height="35.0" width="35.0" x="90.0" y="170.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="staffTask" id="BPMNShape_staffTask">
+        <omgdc:Bounds height="55.0" width="105.0" x="160.0" y="160.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="leaderTask" id="BPMNShape_leaderTask">
+        <omgdc:Bounds height="55.0" width="121.0" x="320.0" y="160.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="end" id="BPMNShape_end">
+        <omgdc:Bounds height="35.0" width="35.0" x="490.0" y="170.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="signTask" id="BPMNShape_signTask">
+        <omgdc:Bounds height="55.0" width="105.0" x="328.0" y="60.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+        <omgdi:waypoint x="265.0" y="187.0"></omgdi:waypoint>
+        <omgdi:waypoint x="320.0" y="187.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+        <omgdi:waypoint x="125.0" y="187.0"></omgdi:waypoint>
+        <omgdi:waypoint x="160.0" y="187.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="backFlow" id="BPMNEdge_backFlow">
+        <omgdi:waypoint x="380.0" y="215.0"></omgdi:waypoint>
+        <omgdi:waypoint x="372.0" y="243.0"></omgdi:waypoint>
+        <omgdi:waypoint x="212.0" y="243.0"></omgdi:waypoint>
+        <omgdi:waypoint x="212.0" y="215.0"></omgdi:waypoint>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="14.0" width="100.0" x="274.0" y="250.0"></omgdc:Bounds>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="passFlow" id="BPMNEdge_passFlow">
+        <omgdi:waypoint x="441.0" y="187.0"></omgdi:waypoint>
+        <omgdi:waypoint x="490.0" y="187.0"></omgdi:waypoint>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="14.0" width="100.0" x="449.0" y="201.0"></omgdc:Bounds>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="signFlow" id="BPMNEdge_signFlow">
+        <omgdi:waypoint x="380.0" y="160.0"></omgdi:waypoint>
+        <omgdi:waypoint x="338.0" y="135.0"></omgdi:waypoint>
+        <omgdi:waypoint x="380.0" y="115.0"></omgdi:waypoint>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="14.0" width="100.0" x="333.0" y="131.0"></omgdc:Bounds>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow4" id="BPMNEdge_flow4">
+        <omgdi:waypoint x="380.0" y="115.0"></omgdi:waypoint>
+        <omgdi:waypoint x="416.0" y="135.0"></omgdi:waypoint>
+        <omgdi:waypoint x="380.0" y="160.0"></omgdi:waypoint>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="14.0" width="100.0" x="399.0" y="130.0"></omgdc:Bounds>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

@@ -36,7 +36,7 @@ public enum ErrorCodeEnum {
 
   PROCESS_KPI_BASELINE_FAILED("040004", "审核流程发起失败，总分不足100分", "Failed to launch process with less 100 score"),
   PROCESS_KPI_STATUS_FAILED("040005", "审核流程发起失败，考核指标已冻结", "Failed to launch process with frozen index"),
-
+  PROCESS_CONFIRM_LAUNCH_FAILED("030008", "Kpi确认流程提交失败", "Failed to launch kpi confirm process"),
   ;
   private String appCode="0x";
   private String code;
