@@ -10,39 +10,43 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>start</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
 
   <dependencies>
 
     <dependency>
       <groupId>com.terence.itech.training.web</groupId>
       <artifactId>training-web-tool</artifactId>
-      <version>${training.version}</version>
+      <version>${app.version}</version>
     </dependency>
     <dependency>
       <groupId>com.terence.itech.training.web</groupId>
       <artifactId>training-web-base</artifactId>
-      <version>${training.version}</version>
+      <version>${app.version}</version>
     </dependency>
     <dependency>
       <groupId>com.terence.itech.training.web</groupId>
       <artifactId>training-web-common</artifactId>
-      <version>${training.version}</version>
+      <version>${app.version}</version>
     </dependency>
     <dependency>
       <groupId>com.terence.itech.training.web</groupId>
       <artifactId>training-web-process</artifactId>
-      <version>${training.version}</version>
+      <version>${app.version}</version>
     </dependency>
     <dependency>
       <groupId>com.terence.itech.training.web</groupId>
       <artifactId>training-web-business</artifactId>
-      <version>${training.version}</version>
+      <version>${app.version}</version>
     </dependency>
     <dependency>
       <groupId>com.terence.itech.training.web</groupId>
       <artifactId>view</artifactId>
-      <version>${training.version}</version>
+      <version>${app.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.terence.itech.training.web</groupId>
+      <artifactId>test</artifactId>
+      <version>${app.version}</version>
     </dependency>
   </dependencies>
 

@@ -15,7 +15,7 @@
     <dependency>
       <groupId>com.terence.itech.training.web</groupId>
       <artifactId>training-web-process</artifactId>
-      <version>${training.version}</version>
+      <version>${app.version}</version>
     </dependency>
   </dependencies>
 
