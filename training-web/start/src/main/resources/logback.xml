@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
     <!--自定义属性-->
-    <property name="context-name" value="training"/>
-<!--    <property name="log-dir" value="/home/tomcat/logs/training/"/>-->
+    <!--<property name="context-name" value="training"/>-->
+    <property name="log-dir" value="/home/tomcat/logs/training/"/>
     <property name="log-dir" value="log/"/>
     <property name="log-console-pattern"
               value="%d{yyyy-MM-dd HH:mm:ss.SSS}|${context-name}|%highlight(%-5level)|%class|%thread|%blue(%method)|%green(%line)|%highlight(%msg%n)"
