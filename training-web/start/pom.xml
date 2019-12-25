@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>training-web</artifactId>
-    <groupId>com.terence.itech.training.web</groupId>
+    <groupId>com.terence.itech.training</groupId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -14,37 +14,37 @@
   <dependencies>
 
     <dependency>
-      <groupId>com.terence.itech.training.web</groupId>
-      <artifactId>training-web-tool</artifactId>
+      <groupId>com.terence.itech.training</groupId>
+      <artifactId>common-tool</artifactId>
       <version>${app.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.terence.itech.training.web</groupId>
-      <artifactId>training-web-base</artifactId>
+      <groupId>com.terence.itech.training</groupId>
+      <artifactId>common-base</artifactId>
       <version>${app.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.terence.itech.training.web</groupId>
-      <artifactId>training-web-common</artifactId>
+      <groupId>com.terence.itech.training</groupId>
+      <artifactId>module-common</artifactId>
       <version>${app.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.terence.itech.training.web</groupId>
-      <artifactId>training-web-process</artifactId>
+      <groupId>com.terence.itech.training</groupId>
+      <artifactId>module-process</artifactId>
       <version>${app.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.terence.itech.training.web</groupId>
-      <artifactId>training-web-business</artifactId>
+      <groupId>com.terence.itech.training</groupId>
+      <artifactId>module-business</artifactId>
       <version>${app.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.terence.itech.training.web</groupId>
+      <groupId>com.terence.itech.training</groupId>
       <artifactId>view</artifactId>
       <version>${app.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.terence.itech.training.web</groupId>
+      <groupId>com.terence.itech.training</groupId>
       <artifactId>test</artifactId>
       <version>${app.version}</version>
     </dependency>

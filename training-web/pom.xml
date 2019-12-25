@@ -6,7 +6,7 @@
     <modules>
         <module>common</module>
         <module>view</module>
-        <module>modules</module>
+        <module>module</module>
         <module>start</module>
       <module>test</module>
     </modules>
@@ -16,7 +16,7 @@
         <version>2.1.8.RELEASE</version>
         <relativePath/>
     </parent>
-    <groupId>com.terence.itech.training.web</groupId>
+    <groupId>com.terence.itech.training</groupId>
     <artifactId>training-web</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>training-web</name>
