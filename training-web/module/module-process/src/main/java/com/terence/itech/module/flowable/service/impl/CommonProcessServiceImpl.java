@@ -12,7 +12,7 @@ import com.terence.itech.flowable.controller.vo.ProcessVO;
 import com.terence.itech.flowable.controller.vo.TaskNode;
 import com.terence.itech.flowable.service.CommonProcessService;
 import com.terence.itech.module.common.service.DepUserService;
-import com.terence.itech.tool.StringUtil;
+import com.terence.itech.base.util.StringUtil;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.flowable.bpmn.model.Process;

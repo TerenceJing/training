@@ -15,11 +15,6 @@
 
     <dependency>
       <groupId>com.terence.itech.training</groupId>
-      <artifactId>common-tool</artifactId>
-      <version>${app.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.terence.itech.training</groupId>
       <artifactId>common-base</artifactId>
       <version>${app.version}</version>
     </dependency>

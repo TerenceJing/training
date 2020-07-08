@@ -1,4 +1,4 @@
-package com.terence.itech.tool;
+package com.terence.itech.base.util;
 
 import org.apache.commons.lang3.StringUtils;
 

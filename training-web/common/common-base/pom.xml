@@ -11,17 +11,42 @@
 
   <artifactId>common-base</artifactId>
   <dependencies>
-    <dependency>
-      <groupId>com.terence.itech.training</groupId>
-      <artifactId>common-tool</artifactId>
-      <version>${app.version}</version>
-    </dependency>
 
     <!-- JWT -->
     <dependency>
       <groupId>io.jsonwebtoken</groupId>
       <artifactId>jjwt</artifactId>
       <version>0.7.0</version>
+    </dependency>
+      <!--        json-->
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.62</version>
+      </dependency>
+      <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>4.5.5</version>
+      </dependency>
+      <!-- CollectionUtils & StringUtils -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>4.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.9</version>
+      </dependency>
+
+      <!--        lombok-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.4</version>
+      <!--<scope>provided</scope>-->
     </dependency>
   </dependencies>
 

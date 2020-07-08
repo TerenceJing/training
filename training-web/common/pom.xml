@@ -13,7 +13,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>common-base</module>
-    <module>common-tool</module>
   </modules>
 
 </project>

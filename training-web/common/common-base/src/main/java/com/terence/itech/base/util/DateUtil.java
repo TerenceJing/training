@@ -1,4 +1,4 @@
-package com.terence.itech.tool;
+package com.terence.itech.base.util;
 
 /**
  * @desc
