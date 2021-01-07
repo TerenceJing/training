@@ -18,8 +18,8 @@ public class Constants implements EnvironmentAware {
 
   @Override
   public void setEnvironment(Environment environment) {
-    JWT_KEY = environment.getProperty("token.generate.key");
-    JWT_ISS = environment.getProperty("token.generate.iss");
-    JWT_EXPTIME = environment.getProperty("token.generate.expire-time", Long.class);
+    JWT_KEY = environment.getProperty("auth.token.generate.key");
+    JWT_ISS = environment.getProperty("auth.token.generate.iss");
+    JWT_EXPTIME = environment.getProperty("auth.token.generate.expire-time", Long.class);
   }
 }

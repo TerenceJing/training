@@ -27,4 +27,7 @@ public class Manager {
     Boolean isLocal=true;
     return isLocal;
   }
+  public void load(){
+    System.out.println("****outPut****");
+  }
 }

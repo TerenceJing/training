@@ -17,7 +17,7 @@ import java.io.PrintWriter;
  * Token 拦截器，校验token有效性
  */
 public class TokenCheckInterceptor implements HandlerInterceptor {
-    @Value("${token.validate.switch:true}")
+    @Value("${auth.token.validate.switch:true}")
     private Boolean tokenValidate;
     private String jsonResult="{\n" + "    \"type\":-1,\n" + "    \"code\": \"0x000001\",\n" + "    \"msg\": \"token认证失败\"\n" + "}";
 

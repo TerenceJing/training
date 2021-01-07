@@ -10,6 +10,8 @@ public class Person {
   private int age;
   private String address;
 
+  public Person(){}
+
   @Override
   public int hashCode(){
     return name.hashCode();
